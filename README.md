@@ -21,3 +21,8 @@ How to use
 ```
 
 * ... no, nothing really...
+
+Licence
+=======
+
+Use it as you find useful, on your own risk.
