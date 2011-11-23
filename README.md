@@ -10,12 +10,14 @@ Let me know if you have any luck making its way on the AppStore.
 How to use
 ==========
 
-1. Use IMTWebView instead of the UIWebView - you can do this in both interface builder or code
-2. Implement IMTWebViewProgressDelegate method, for example like this:
+* Use IMTWebView instead of the UIWebView - you can do this in both interface builder or code
+* Implement IMTWebViewProgressDelegate method, for example like this:
 
-    // self.progressView is a UIProgressView instance
-    - (void)webView:(IMTWebView *)webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources {
-        [self.progressView setProgress:((float)resourceNumber) / ((float)totalResources)];
-    }
+```objective-c
+// self.progressView is a UIProgressView instance
+\- (void)webView:(IMTWebView *)webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources \{
+    [self.progressView setProgress:((float)resourceNumber) / ((float)totalResources)];
+\}
+```
 
-3. … no, nothing really…
+* ... no, nothing really...
