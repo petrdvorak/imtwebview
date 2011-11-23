@@ -31,7 +31,6 @@
 - (void)webView:(IMTWebView *)_webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources {
     [self.progressView setProgress:((float)resourceNumber) / ((float)totalResources)];
     if (resourceNumber == totalResources) {
-        [self.progressView setProgress:0];
         _webView.resourceCount = 0;
         _webView.resourceCompletedCount = 0;
     }
