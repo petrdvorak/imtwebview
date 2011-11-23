@@ -15,9 +15,9 @@ How to use
 
 ```objective-c
 // self.progressView is a UIProgressView instance
-\- (void)webView:(IMTWebView *)webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources \{
+- (void)webView:(IMTWebView *)webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources {
     [self.progressView setProgress:((float)resourceNumber) / ((float)totalResources)];
-\}
+}
 ```
 
 * ... no, nothing really...
