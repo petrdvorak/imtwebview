@@ -17,6 +17,8 @@
 @implementation IMTWebView
 
 @synthesize progressDelegate;
+@synthesize resourceCount;
+@synthesize resourceCompletedCount;
 
 -(id)webView:(id)view identifierForInitialRequest:(id)initialRequest fromDataSource:(id)dataSource
 {

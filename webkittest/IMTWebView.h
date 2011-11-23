@@ -16,9 +16,10 @@
 @end
 
 @interface IMTWebView : UIWebView {
-    int resourceCount;
-    int resourceCompletedCount;
 }
+
+@property (nonatomic, assign) int resourceCount;
+@property (nonatomic, assign) int resourceCompletedCount;
 
 @property (nonatomic, assign) IBOutlet id<IMTWebViewProgressDelegate> progressDelegate;
 

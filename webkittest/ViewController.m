@@ -28,8 +28,13 @@
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.inmite.eu/"]]];
 }
 
-- (void)webView:(IMTWebView *)webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources {
+- (void)webView:(IMTWebView *)_webView didReceiveResourceNumber:(int)resourceNumber totalResources:(int)totalResources {
     [self.progressView setProgress:((float)resourceNumber) / ((float)totalResources)];
+    if (resourceNumber == totalResources) {
+        [self.progressView setProgress:0];
+        _webView.resourceCount = 0;
+        _webView.resourceCompletedCount = 0;
+    }
 }
 
 - (void)viewDidUnload
