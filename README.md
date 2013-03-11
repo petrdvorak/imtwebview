@@ -25,4 +25,7 @@ How to use
 Licence
 =======
 
-Use it as you find useful, on your own risk.
+This software is shared under the IHL ("Inmite Happiness License"), which is derived from
+[MIT license](http://en.wikipedia.org/wiki/MIT_License "MIT License at Wikipedia")
+completely, except for you have to follow [@inmite](http://twitter.com/inmite) if you are
+[happy](http://en.wikipedia.org/wiki/Happiness) using the software of matter.
